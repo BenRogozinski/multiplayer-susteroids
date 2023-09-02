@@ -69,6 +69,18 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "asteroidSmall"
     },
+    "image15": {
+        "data": "hwQgACAAAAAAAAAAAAAAwMzMzAwAAAAAAAAAAAAAAMy7u7vMAAAAAAAAAAAAAAC8u7u7ywAAAAAAAAAAAAAAvLu7u8sMAAAAAAAAAAAAwLzLu7u7DAAAAAAAAAAAAMy7u8vMu8wAAAAAAAAAAMC8u7vLzLvLAAAAAAAAAMDMu7u7y8y7ywwAAAAAzMzMu7u8u7u7u7sMAAAAwLy7u7u7u7u7u7u7DAAAAMy7vLu8u7vLu7u7u8wAAAC8u7u7u7u7u7u7u7vLDAAAvLu7u7vMvLu7u7u7u8wAALy7u7u7zLy7u7u8u7zLzAC8u7u8u8y8u7u7u7u7u8vAvMy8u7u7u7u7u7u7u7vLwLvMvLvLu7u7zLy7u7u7y8C7zLy7u7u8u8y8u7u7u8vAu7u7u7u7u7vMvLvMvLvMwLy7u7u7u7u7u7u7zLy7DAC8vLu7u7u7u7u7u8y8uwwAvLu7u7u7u7u7u7u7u8sMALy7y7u8y8y7vLu7u7vMAAC8u7u7u8vMu7u7y8zMDAAAvLu7u7vLzLu7y8wAAAAAAMy7u7u7u7u7u8sAAAAAAADAvLu7y7u7u7vLAAAAAAAAAMy8u7u7u7u7zAAAAAAAAAAAzMy8u7vLuwwAAAAAAAAAAAAAzMy7u7sMAAAAAAAAAAAAAADAzLvLDAAAAAAAAAAAAAAAAMDMzAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "asteroidLarge"
+    },
+    "anim1": {
+        "namespace": "myAnimations",
+        "id": "anim1",
+        "mimeType": "application/mkcd-animation",
+        "data": "YzgwMDEwMDAxMDAwMDEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA=",
+        "displayName": "myAnim"
+    },
     "*": {
         "mimeType": "image/x-mkcd-f4",
         "dataEncoding": "base64",
