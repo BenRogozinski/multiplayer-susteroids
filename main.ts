@@ -17,6 +17,7 @@ controller.player1.onEvent(ControllerEvent.Disconnected, function () {
 })
 controller.player2.onButtonEvent(ControllerButton.A, ControllerButtonEvent.Pressed, function () {
     blueCrewmate.setImage(assets.image`blueCrewmate2`)
+    music.play(music.melodyPlayable(music.pewPew), music.PlaybackMode.InBackground)
     blueLaser = sprites.create(assets.image`blueLaser`, SpriteKind.Projectile)
     blueLaser.setPosition(130, blueCrewmate.y)
     blueLaser.setFlag(SpriteFlag.AutoDestroy, true)
@@ -37,6 +38,7 @@ controller.player2.onEvent(ControllerEvent.Disconnected, function () {
 })
 controller.player4.onButtonEvent(ControllerButton.A, ControllerButtonEvent.Pressed, function () {
     greenCrewmate.setImage(assets.image`greenCrewmate2`)
+    music.play(music.melodyPlayable(music.pewPew), music.PlaybackMode.InBackground)
     greenLaser = sprites.create(assets.image`greenLaser`, SpriteKind.Projectile)
     greenLaser.setPosition(130, greenCrewmate.y)
     greenLaser.setFlag(SpriteFlag.AutoDestroy, true)
@@ -46,6 +48,7 @@ controller.player4.onButtonEvent(ControllerButton.A, ControllerButtonEvent.Press
 })
 controller.player1.onButtonEvent(ControllerButton.A, ControllerButtonEvent.Pressed, function () {
     redCrewmate.setImage(assets.image`redCrewmate2`)
+    music.play(music.melodyPlayable(music.pewPew), music.PlaybackMode.InBackground)
     redLaser = sprites.create(assets.image`redLaser`, SpriteKind.Projectile)
     redLaser.setPosition(130, redCrewmate.y)
     redLaser.setFlag(SpriteFlag.AutoDestroy, true)
@@ -55,6 +58,7 @@ controller.player1.onButtonEvent(ControllerButton.A, ControllerButtonEvent.Press
 })
 controller.player3.onButtonEvent(ControllerButton.A, ControllerButtonEvent.Pressed, function () {
     yellowCrewmate.setImage(assets.image`yellowCrewmate2`)
+    music.play(music.melodyPlayable(music.pewPew), music.PlaybackMode.InBackground)
     yellowLaser = sprites.create(assets.image`yellowLaser`, SpriteKind.Projectile)
     yellowLaser.setPosition(130, yellowCrewmate.y)
     yellowLaser.setFlag(SpriteFlag.AutoDestroy, true)
