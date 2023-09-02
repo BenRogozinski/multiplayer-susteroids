@@ -24,7 +24,16 @@ controller.player2.onButtonEvent(ControllerButton.A, ControllerButtonEvent.Press
     blueLaser.setVelocity(-200, 0)
     pause(100)
     blueCrewmate.setImage(assets.image`blueCrewmate1`)
+    pause(fireDelay)
 })
+function initializeGame () {
+    scene.setBackgroundImage(assets.image`spaceBackground`)
+    info.setScore(0)
+    playersRemaining = 0
+    gameStarted = 0
+    game.setGameOverEffect(true, effects.none)
+    game.setGameOverMessage(true, "GAME OVER!")
+}
 controller.player3.onEvent(ControllerEvent.Connected, function () {
     yellowCrewmate = sprites.create(assets.image`yellowCrewmate1`, SpriteKind.Player)
     yellowCrewmate.setPosition(146, 75)
@@ -45,6 +54,7 @@ controller.player4.onButtonEvent(ControllerButton.A, ControllerButtonEvent.Press
     greenLaser.setVelocity(-200, 0)
     pause(100)
     greenCrewmate.setImage(assets.image`greenCrewmate1`)
+    pause(fireDelay)
 })
 controller.player1.onButtonEvent(ControllerButton.A, ControllerButtonEvent.Pressed, function () {
     redCrewmate.setImage(assets.image`redCrewmate2`)
@@ -55,6 +65,7 @@ controller.player1.onButtonEvent(ControllerButton.A, ControllerButtonEvent.Press
     redLaser.setVelocity(-200, 0)
     pause(100)
     redCrewmate.setImage(assets.image`redCrewmate1`)
+    pause(fireDelay)
 })
 controller.player3.onButtonEvent(ControllerButton.A, ControllerButtonEvent.Pressed, function () {
     yellowCrewmate.setImage(assets.image`yellowCrewmate2`)
@@ -65,6 +76,7 @@ controller.player3.onButtonEvent(ControllerButton.A, ControllerButtonEvent.Press
     yellowLaser.setVelocity(-200, 0)
     pause(100)
     yellowCrewmate.setImage(assets.image`yellowCrewmate1`)
+    pause(fireDelay)
 })
 controller.player2.onEvent(ControllerEvent.Connected, function () {
     blueCrewmate = sprites.create(assets.image`blueCrewmate1`, SpriteKind.Player)
@@ -105,14 +117,12 @@ let blueLaser: Sprite = null
 let blueCrewmate: Sprite = null
 let redCrewmate: Sprite = null
 let yellowCrewmate: Sprite = null
-let greenCrewmate: Sprite = null
 let gameStarted = 0
-scene.setBackgroundImage(assets.image`spaceBackground`)
-info.setScore(0)
 let playersRemaining = 0
-gameStarted = 0
-game.setGameOverEffect(true, effects.none)
-game.setGameOverMessage(true, "GAME OVER!")
+let greenCrewmate: Sprite = null
+let fireDelay = 0
+fireDelay = 100
+initializeGame()
 game.onUpdateInterval(500, function () {
     if (playersRemaining == 0 && gameStarted == 1) {
         game.gameOver(true)
